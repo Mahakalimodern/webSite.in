@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #e3f0fc;
+}
+.animation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+}
+
+.anmmain,
+.anisec {
+  color: #004d69;
+  margin: 1px 0;
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 200;
+  font-size: 4.5rem;
+  font-style: normal;
+  animation: fadeIn 2s ease-out forwards;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 3;
+    transform: scale(1);
+  }
+}
+
+@keyframes faderight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 3;
+    transform: scale(1);
+  }
+}
+@keyframes fadeleft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 3;
+    transform: scale(1);
+  }
+}
+.mainpageabout {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.about-section {
+  background-color: #e0f7fa;
+  width: 40%;
+  border-radius: 44px;
+  box-shadow: 11px 15px 15px 3px #7fceffc4;
+  background: #bbdfff65;
+  margin: 15px 70px;
+  padding: 15px;
+  border: 3px solid #bbdfff;
+}
+
+.about-section-header {
+  font-family: "DM Serif Display", serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #007bb5;
+}
+
+.about-section-details {
+  font-family: serif;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+  font-size: 1rem;
+  color: #004d69;
+  cursor: pointer;
+}
+
+.slider {
+  border: 3px solid #bbdfff;
+  margin-top: 50px;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 5px 55px  #7fceffc4;
+}
+
+.slides {
+  display: flex;
+
+  /* overflow: hidden; */
+  transition: transform 0.5s ease-in-out;
+}
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+   flex: 0 0 100%;
+   border-radius: 10px;
+
+}
+
+@media  (max-width :800px){
+  
+  .mainpageabout{
+    display: flex;
+    flex-direction:column-reverse ;
+  }
+
+  .slider{
+    margin: 20px;
+    padding: 0;
+    width: 90dvw;
+  }
+  .about-section{
+    padding: 20px;
+    margin: 20px;
+    width: 90dvw;
+  }
+  .shownabbar svg{
+    z-index: 9;
+  }
+}
