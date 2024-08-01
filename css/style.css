@@ -473,7 +473,8 @@ nav ul li a.button:hover {
     display: inline-block;
     font-size: 40px;
     margin: 0;
-    padding: 0px;
+    padding: 0px  0px  0px 110px;
+    
   }
 
   .aboutmembers {
