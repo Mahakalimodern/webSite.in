@@ -469,11 +469,9 @@ nav ul li a.button:hover {
     margin: 0;
   }
 
-  .newstabst {
-    display: inline-block;
+  .newstabst{
     font-size: 40px;
-    margin: 0;
-    padding: 0px  0px  0px 110px;
+    padding: 0px;
     
   }
 
